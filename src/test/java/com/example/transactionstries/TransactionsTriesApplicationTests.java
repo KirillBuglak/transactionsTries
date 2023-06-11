@@ -1,10 +1,10 @@
-package com.example.transactiosntries;
+package com.example.transactionstries;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TransactiosnTriesApplicationTests {
+class TransactionsTriesApplicationTests {
 
 	@Test
 	void contextLoads() {

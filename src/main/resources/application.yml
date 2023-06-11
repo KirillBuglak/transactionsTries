@@ -1,0 +1,29 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/transactions_tries?useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        order_inserts: true
+        order_updates: true
+        batch_versioned_data: true
+        jdbc:
+          batch_size: 25
+    hibernate:
+      ddl-auto: create
+      format_sql: true
+    show-sql: true
+logging:
+#  pattern:
+#    console: "|%-5level| %msg%n"
+  level:
+#    org.springframework.orm.jpa: DEBUG
+    root: OFF
